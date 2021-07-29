@@ -21,7 +21,8 @@ header #top .social-links a{margin-left: 15px;}
 header #innerheader{padding-bottom: 10px;}
 header #innerheader nav{padding:0px 0;}
 header #innerheader nav ul{display: flex;justify-content: space-evenly;align-items: center;width: 100%;}
-header #innerheader nav li a{font-size: 18px;color:#fff;font-weight: 500;}
+header #innerheader nav li a{font-size: 18px;color:#fff;font-weight: 500;transition: .2s ease-in;}
+header #innerheader nav li a:hover{color:#ED1E23;}
 header .mainlogo{text-align:left;}
 header .mainlogo img{width: 100%;max-width:300px;}
 
@@ -199,8 +200,8 @@ body{overflow-x: hidden;}
 #testimonials * img{max-width: 130px;display: block;margin: 0 auto;}
 
 
-#team{margin-top:40px;margin-bottom:0px;padding-bottom: 50px;}
-#team .col-12.text-center h1{font-size: 42px;line-height: 50px;color:#000;text-transform: uppercase;font-weight: bold;}
+#team{margin-top:00px;margin-bottom:0px;padding-bottom: 50px;padding-top: 25px;}
+#team .col-12.text-center h1{font-size: 42px;line-height: 50px;color:#fff;text-transform: uppercase;font-weight: bold;margin-top: 25px;}
 #team .col-12.text-center strong{font-size: 22px;line-height: 32px;color:#ED1E23;text-transform: uppercase;margin-bottom: 15px;font-weight: bold;display: block;}
 
 
@@ -761,7 +762,7 @@ display: inline-block;
 }
 /****** *******/
 
-
+#team{padding-top: 156px;background: url("./red.svg")no-repeat;background-size: cover;background-attachment: fixed;}
 #careers{padding-top: 156px;background: url("./red.svg")no-repeat;background-size: cover;background-attachment: fixed;}
 .sec-title{position:relative;padding-bottom:40px}
 .sec-title .title{position:relative;color:#ED1E23;font-size:18px;font-weight:700;padding-right:50px;margin-bottom:15px;display:inline-block;text-transform:capitalize}
@@ -797,6 +798,7 @@ display: inline-block;
   .navholder{justify-content: flex-start!important;}
   .navbar-light .navbar-toggler{filter: invert(1);border-color: transparent!important;}
   #careers{padding-top: 0px;}
+  #team{padding-top: 0px;}
   .overlay{margin-top: 0px;}
 }
 @media(max-width:767px)
