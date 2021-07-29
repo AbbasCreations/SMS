@@ -13,7 +13,17 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="custom.css">
-
+<style>
+    #popup {
+    display:none;
+    position:absolute;
+    margin:0 auto;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 0px 0px 50px 2px #000;
+}
+    </style>
   </head>
 
 
@@ -111,6 +121,20 @@
     </header>
 
 <section id="careers">
+        <!-- let's call the following div as the POPUP FRAME -->
+    <div id="popup" class="popup panel panel-primary">
+        
+        <!-- and here comes the image -->
+        <img src="./careerbanner.png" alt="popup">
+            
+            <!-- Now this is the button which closes the popup-->
+        <div class="panel-footer">
+            <i class="fa fa-times text-dark" id="close"></i>
+        </div>
+            
+            <!-- and finally we close the POPUP FRAME-->
+            <!-- everything on it will show up within the popup so you can add more things not just an image -->
+    </div>
   <div class="container">
     <section class="contact-page-section">
       <div class="container">
@@ -402,7 +426,17 @@ $(document).ready(function(){
 
             
             
+//with this first line we're saying: "when the page loads (document is ready) run the following script"
+$(document).ready(function () {
+    //select the POPUP FRAME and show it
+    $("#popup").hide().fadeIn(1000);
 
+    //close the POPUP if the button with id="close" is clicked
+    $("#close").on("click", function (e) {
+        e.preventDefault();
+        $("#popup").fadeOut(1000);
+    });
+});
 
 
 
