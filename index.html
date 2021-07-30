@@ -15,7 +15,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
-<body>
+<body data-spy="scroll" data-target="#main-nav">
     <header>
         <div id="top">
             <div class="container">
@@ -62,7 +62,7 @@
                         </a>
                     </div>
 
-                    <div class="col-lg-9 col-md-12 col-sm-12 col-12 d-flex align-items-center  navholder">
+                    <div class="col-lg-9 col-md-12 col-sm-12 col-12 d-flex align-items-center  navholder" id="main-nav">
                         <nav class="navbar navbar-expand-lg navbar-light">
                             <button class="navbar-toggler" id="menuopen" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
                               <span class="navbar-toggler-icon "></span>
@@ -671,7 +671,24 @@ $("#menuopen").click(function(){
   $("#navbarTogglerDemo02 ").toggle();
 });
 
+// Init Scrollspy
+    $('body').scrollspy({ target: '#main-nav' });
 
+    // Smooth Scrolling
+    $("#main-nav a").on('click', function (event) {
+      if (this.hash !== "") {
+        event.preventDefault();
+
+        const hash = this.hash;
+
+        $('html, body').animate({
+          scrollTop: $(hash).offset().top
+        }, 800, function () {
+
+          window.location.hash = hash;
+        });
+      }
+    });
 
 
             </script>
