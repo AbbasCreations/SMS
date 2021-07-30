@@ -804,6 +804,7 @@ width:100%;
 .choiceimg img{border-radius: 25px;}
 
 #team{padding-top: 156px;background: url("./red.svg")no-repeat;background-size: cover;background-attachment: fixed;}
+#products{padding-top: 156px;background: url("./bg.jpg")no-repeat;background-size: cover;background-attachment: fixed;}
 #careers{padding-top: 156px;}
 .sec-title{position:relative;padding-bottom:40px;padding-top: 00px;}
 .sec-title img{width: 100%;height: 350px;object-fit: cover;object-position: center;}
@@ -843,6 +844,7 @@ width:100%;
   .navbar-light .navbar-toggler{filter: invert(1);border-color: transparent!important;}
   #careers{padding-top: 0px;}
   #team{padding-top: 0px;}
+  #products{padding-top: 0px;}
   .overlay{margin-top: 0px;}
         header #innerheader nav ul{align-items:flex-start;padding-left:15px;}
 }
