@@ -13,24 +13,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="custom.css">
-<style>
-    #popup {
-    display:none;
-    position:absolute;
-    margin:0 auto;
-    top: 50%;
-    left: 50%;
-width:100%;
-        max-width:max-content;
-        z-index:99999999999999999999999999999999999999999999999999999999999999;
-    transform: translate(-50%, -50%);
-    box-shadow: 2px 4px 25px 2px #000;
-}
-    #popup img{height:100%;max-height:600px;width:100%;max-width:max-content;}
-    #popup i{position: absolute;
-    bottom: 0;font-size:16px;
-        left: 7.5px;}
-    </style>
+
   </head>
 
 
@@ -142,24 +125,72 @@ width:100%;
             <!-- and finally we close the POPUP FRAME-->
             <!-- everything on it will show up within the popup so you can add more things not just an image -->
     </div>
+    <div class="sec-title">
+      <img src="./scott-graham-5fNmWej4tAA-unsplash.jpg" class="img-fluid">    
+      <div class="title">
+        <h2>Come Work With Us</h2>
+        <p>Work where you are valued and grow with us!</p>
+      </div> 
+    </div>
   <div class="container">
-    <section class="contact-page-section">
+    <div class="row">
+      <div class="col-12 text-center count">
+          <h1>Growth In Numbers</h1>
+          <p>We have grown from strength to strength over the past 25 years</p>
+        </div>
+          <div class="col-lg-3 col-md-3 col-sm-6 col-12 ac">
+            <i class="fa fa-store fa-3x"></i>
+            <div class="counter" data-target="11000">0</div>
+            <h5>Grocery Outlets</h5>
+          </div>
+          <div class="col-lg-3 col-md-3 col-sm-6 col-12 ac">
+            <i class="fa fa-truck fa-3x"></i>
+            <div class="counter" data-target="200">0</div>
+            <h5>Commercial Vehicles</h5>
+          </div>
+          <div class="col-lg-3 col-md-3 col-sm-6 col-12 ac">
+            <i class="fa fa-user fa-3x"></i>
+            <div class="counter" data-target="800">0</div>
+            <h5>Our Employees</h5>
+          </div>
+          <div class="col-lg-3 col-md-3 col-sm-6 col-12 ac">
+            <i class="fa fa-medal fa-3x"></i>
+            <div class="counter" data-target="25">0</div>
+            <h5>Years Of Operations</h5>
+          </div>
+          <div class="info-column col-lg-10 col-md-11 col-sm-12 col-xs-12 my-5 mx-auto">
+            <div class="inner-column">
+                <h2>Why Work With Us?</h2>
+                <p>At Shan Marketing Services, you will work with hardworking individuals who work together to shape the future of our distribution setup.<br>We hail from over 11000 grocery outlets, manage more than 200 commercially operated vehicles, and apply an incredible depth of experience to our work. Our accolades include several certificates, awards, and recognitions from our business partners over the last 25 years of our commitment to providing exceptional distribution service and partnership.</p>
+              </div>
+          </div>
+          <div class="col-lg-6 col-md-6 col-12 choice mt-5 mb-5">
+            <h4>Do you think you are the one ?</h4>
+            <p>At Shan Marketing Services, you will work with hardworking individuals who work together to shape the future of our distribution setup.
+              And you will be growing with us which will eventually help the company grow as well. If you think that you are the one wo can work with us then go ahead and press the apply now button.
+            </p>
+            <a href="#popupform" id="apply">Apply Now</a>
+          </div>
+          <div class="col-lg-6 col-md-6 col-12 choiceimg mt-5 mb-5">
+            <img src="./hr-process-4783430_1920.png" class="img-fluid rounded-75">
+          </div>
+    </div>
+    <section class="contact-page-section" id="popupform">
       <div class="container">
-          <div class="sec-title">
-              <div class="title">Application Form</div>
-                <h2>We are hiring</h2>
-            </div>
             <div class="inner-container">
+              <i class="fa fa-times fa-2x text-dark position-absolute" id="closeform"></i>
               <div class="row clearfix">
                 
                   <!--Form Column-->
-                    <div class="form-column col-md-8 col-sm-12 col-xs-12">
-                      <div class="inner-column">
-                          
+                    <div class="form-column col-md-12 col-sm-12 col-xs-12 mx-auto">
+                      <div class="inner-column position-relatve">
                             <!--Contact Form-->
                             <div class="contactform">
                                 <form action="mailto:hiring@shanmarketing.com" method="POST" enctype="multipart/form-data" name="EmailForm" id="contactform">
                                     <div class="row clearfix">
+                                        <div class="col-12 text-center mb-2">
+                                            <h4>Application Form</h4>
+                                        </div>
                                         <div class="form-group col-md-6 col-sm-6 co-xs-12">
                                             <input type="text" name="firstname" value="" placeholder="First Name" required>
                                         </div>
@@ -172,7 +203,7 @@ width:100%;
                                         <div class="form-group col-md-6 col-sm-6 co-xs-12">
                                             <input type="text" name="phone" value="" placeholder="Phone" required>
                                         </div>
-                                        <div class="form-group col-md-12 col-sm-12 co-xs-12">
+                                        <div class="form-group col-lg-6 col-md-6 col-sm-12 co-xs-12">
                                             <select>
                                                 <option selected class="font-normal">Department of Interest</option>
                                                 <option>HR</option>
@@ -184,13 +215,14 @@ width:100%;
                                                 <option>Sales</option>
                                             </select>
                                         </div>
-                                        <div class="form-group col-md-12 col-sm-12 co-xs-12">
+                                        <div class="form-group col-lg-6 col-md-6 col-sm-12 co-xs-12">
                                           <label>Attach Resume</label>
                                           <input type="file" class="form-control" id="inputGroupFile04" aria-describedby="inputGroupFileAddon04" aria-label="Upload">
                                           <button class="btn btn-outline-secondary" type="button" id="inputGroupFileAddon04">Upload</button>
                                         </div>
-                                        <div class="form-group col-md-12 col-sm-12 co-xs-12">
-                                            <textarea rows=2 name="message" placeholder="Message"></textarea>
+                                        <div class="form-group col-lg-12 col-md-12 col-sm-12 co-xs-12">
+                                            <label>Additional Notes:</label>
+                                            <textarea rows=2 name="message" placeholder="Enter your message here ..."></textarea>
                                         </div>
                                         <div class="form-group col-md-12 col-sm-12 co-xs-12">
                                             <button type="submit" class="theme-btn btn-style-one">Send Now</button>
@@ -204,12 +236,6 @@ width:100%;
                     </div>
                     
                     <!--Info Column-->
-                    <div class="info-column col-md-4 col-sm-12 col-xs-12">
-                      <div class="inner-column">
-                          <h2>Why work with us?</h2>
-                          <p>At Shan Marketing Services, you will work with hardworking individuals who work together to shape the future of our distribution setup.<br>We hail from over 11000 grocery outlets, manage more than 200 commercially operated vehicles, and apply an incredible depth of experience to our work. Our accolades include several certificates, awards, and recognitions from our business partners over the last 25 years of our commitment to providing exceptional distribution service and partnership.</p>
-                        </div>
-                    </div>
                 </div>
             </div>
         </div>
@@ -348,6 +374,8 @@ width:100%;
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js " integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q " crossorigin="anonymous "></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js " integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl " crossorigin="anonymous "></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
         <script>
             $('.partners').owlCarousel({
   loop: true,
@@ -445,7 +473,45 @@ $(document).ready(function () {
         e.preventDefault();
         $("#popup").fadeOut(1000);
     });
+    $("#apply").on("click",function (e){
+      $("#popupform").toggle();
+    });
+    $("#closeform").on("click",function (e){
+      $("#popupform").toggle();
+    });
+
 });
+
+
+
+const counters = document.querySelectorAll('.counter');
+const speed = 200; // The lower the slower
+
+counters.forEach(counter => {
+	const updateCount = () => {
+		const target = +counter.getAttribute('data-target');
+		const count = +counter.innerText;
+
+		// Lower inc to slow and higher to slow
+		const inc = target / speed;
+
+		// console.log(inc);
+		// console.log(count);
+
+		// Check if target is reached
+		if (count < target) {
+			// Add inc to count and output in counter
+			counter.innerText = count + inc;
+			// Call function every ms
+			setTimeout(updateCount, 1);
+		} else {
+			counter.innerText = target;
+		}
+	};
+
+	updateCount();
+});
+
 
 
 

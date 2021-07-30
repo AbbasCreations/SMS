@@ -761,27 +761,71 @@ display: inline-block;
 
 }
 /****** *******/
+.count{margin-bottom: 15px;}
+.count h1{color:#ED1E23;font-weight: bold;font-size: 35px;}
+.count P{font-size: 18px;color:#222;font-weight: 500;}
+
+div.ac{
+  border-right:#ddd solid 0.1px;
+  text-align: center;margin-bottom: 15px;
+}
+div.ac:last-child{
+  border-right:#ddd solid 0px;
+}
+.counter{font-size: 26px;color:#000;margin:5px 0;font-weight: 600;}
+.ac i {
+	color: #ED1E23;
+	margin-bottom:10px;
+}
+.ac h5{font-size: 20px;color:#000;font-weight: 500;}
+#popup {
+  display:none;
+  position:absolute;
+  margin:0 auto;
+  top: 50%;
+  left: 50%;
+width:100%;
+      max-width:max-content;
+      z-index:99999999999999999999999999999999999999999999999999999999999999;
+  transform: translate(-50%, -50%);
+  box-shadow: 2px 4px 25px 2px #000;
+}
+  #popup img{height:100%;max-height:600px;width:100%;max-width:max-content;}
+  #popup i{position: absolute;
+  bottom: 0;font-size:16px;
+      left: 7.5px;}
+  
+#popupform{display: none;position: absolute;left:0;right: 0;top: 50%;transform: translateY(-50%);}
+
+.choice h4{font-size: 30px;color:#ED1E23;text-transform:capitalize;}
+.choice p{font-size: 18px;line-height: 25px;color:#222;}
+.choice a{font-size:16px;font-weight:700;margin-top:10px;text-transform:capitalize;padding:16px 39px;border:2px solid #ED1E23;font-family:Arimo,sans-serif;background:#ED1E23;display:inline-block;position:relative;line-height:24px;cursor:pointer;color:#fff}
+.choice a:hover{color:#ED1E23;border-color:#ED1E23;background:0 0}
+.choiceimg img{border-radius: 25px;}
 
 #team{padding-top: 156px;background: url("./red.svg")no-repeat;background-size: cover;background-attachment: fixed;}
-#careers{padding-top: 156px;background: url("./red.svg")no-repeat;background-size: cover;background-attachment: fixed;}
-.sec-title{position:relative;padding-bottom:40px}
-.sec-title .title{position:relative;color:#ED1E23;font-size:18px;font-weight:700;padding-right:50px;margin-bottom:15px;display:inline-block;text-transform:capitalize}
+#careers{padding-top: 156px;}
+.sec-title{position:relative;padding-bottom:40px;padding-top: 00px;}
+.sec-title img{width: 100%;height: 350px;object-fit: cover;object-position: center;}
+.sec-title .title{position: absolute;top:50%;transform: translateY(-50%);left: 0;right: 0;margin: 0 auto;text-align: center;filter: drop-shadow(2px 4px 6px black);}
+.sec-title .title p{position:relative;color:#ED1E23;font-size:18px;font-weight:700;padding:0 15px;margin-bottom:15px;display:inline-block;text-transform:capitalize}
 .sec-title .title:before{position:absolute;content:'';right:0;bottom:7px;width:40px;height:1px;background-color:#bbb}
-.sec-title h2{position:relative;color:#252525;font-size:36px;font-weight:700;line-height:1.5em;display:block}
-.sec-title.light h2{color:#fff}.contact-page-section{position:relative;padding-top:50px; padding-bottom:50px;}
-.contact-page-section .inner-container{position:relative;z-index:1;background-color:#ED1E23;box-shadow:0 0 15px 5px rgba(0,0,0,.1)}
-.contact-page-section .form-column{position:relative;padding:0 0 0 15px}
-.contact-page-section .form-column .inner-column{position:relative;padding:60px 45px 30px;background-color:#fff}
-.contact-page-section .info-column{position:relative}
-.contact-page-section .info-column .inner-column{position:relative;padding:25px 15px}
-.contact-page-section .info-column h2{position:relative;color:#fff;font-size:30px;font-weight:700;line-height:1.4em;margin-bottom:45px}
-.contact-page-section .info-column .list-info{position:relative;margin-bottom:60px}
-.contact-page-section .info-column p{position:relative;margin-bottom:25px;font-size:18px;color:#fff;line-height:1.8em;padding-left:0px}
-.contact-page-section .info-column .list-info li:last-child{margin-bottom:0}
-.contact-page-section .info-column .list-info li i{position:absolute;left:0;top:8px;color:#fff;font-size:30px}
+.sec-title h2{position:relative;color:#fff;font-size:36px;font-weight:700;line-height:1.5em;display:block;padding: 0 15px;}
+.contact-page-section{position:relative;padding-top:30px; padding-bottom:50px;z-index: 99999999999999999999999999999999999999999999999999999999;height: 90vh;}
+.contact-page-section .inner-container{position:relative;z-index:1;}
+.contact-page-section .inner-container i{z-index: 9999999999999999999;left:15px!important;}
+.contact-page-section .form-column{position:relative;padding:0 15px;box-shadow:0 0 15px 5px rgba(0,0,0,.1);}
+.contact-page-section .form-column .inner-column{position:relative;padding:30px 30px 30px;background-color:#fff}
+ .info-column{position:relative;text-align: center;background:url("./red.svg")no-repeat;padding:25px 0;background-attachment: fixed;background-size:cover;}
+ .info-column .inner-column{position:relative;padding:25px 15px;}
+ .info-column h2{position:relative;color:#fff;font-size:30px;font-weight:700;line-height:1.4em;margin-bottom:45px;text-align: center;filter: drop-shadow(2px 4px 6px black);}
+ .info-column .list-info{position:relative;margin-bottom:60px}
+ .info-column p{position:relative;margin-bottom:25px;font-size:16px;color:#fff;line-height:1.8em;padding:0 15px;}
+ .info-column .list-info li:last-child{margin-bottom:0}
+ .info-column .list-info li i{position:absolute;left:0;top:8px;color:#fff;font-size:30px}
 .contactform{position:relative}.contactform .form-group{position:relative;margin-bottom:20px}
 .contactform input[type=text],.contactform input[type=email],.contactform textarea{position:relative;display:block;width:100%;height:60px;color:#222;font-size:14px;line-height:38px;padding:10px 30px;border:1px solid #ddd;background-color:#fff;transition:all .3s ease;-ms-transition:all .3s ease;-webkit-transition:all .3s ease}
-.contactform input[type=text]:focus,.contactform input[type=email]:focus,.contactform textarea:focus{border-color:#ED1E23;}.contactform textarea{height:150px;resize:none}
+.contactform input[type=text]:focus,.contactform input[type=email]:focus,.contactform textarea:focus{border-color:#ED1E23;}.contactform textarea{height:100px;resize:none}
 .contactform .theme-btn{font-size:16px;font-weight:700;margin-top:10px;text-transform:capitalize;padding:16px 39px;border:2px solid #ED1E23;font-family:Arimo,sans-serif;background:#ED1E23;display:inline-block;position:relative;line-height:24px;cursor:pointer;color:#fff}
 .contactform .theme-btn:hover{color:#ED1E23;border-color:#ED1E23;background:0 0}
 .contactform input.error,.contactform select.error,.contactform textarea.error{border-color:red!important}
