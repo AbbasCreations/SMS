@@ -824,7 +824,7 @@ width:100%;
   content: "+";
 }
 .sec-title{position:relative;padding-bottom:40px;padding-top: 00px;}
-.sec-title img{width: 100%;height: 350px;object-fit: cover;object-position: center;}
+.sec-title img{width: 100%;height: auto;object-fit: cover;object-position: center;}
 .sec-title .title{position: absolute;top:50%;transform: translateY(-50%);left: 0;right: 0;margin: 0 auto;text-align: center;filter: drop-shadow(2px 4px 6px black);}
 .sec-title .title p{position:relative;color:#ED1E23;font-size:18px;font-weight:700;padding:0 15px;margin-bottom:15px;display:inline-block;text-transform:capitalize}
 .sec-title .title:before{position:absolute;content:'';right:0;bottom:7px;width:40px;height:1px;background-color:#bbb}
