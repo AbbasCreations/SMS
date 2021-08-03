@@ -912,8 +912,8 @@ width:100%;
 }
 @media(max-width:767px)
 {
-  #products .container .row .col-12 img:first-of-type{display: none;}
-  #products .container .row .col-12 img:last-of-type{display: block;}
+  #products .container .row .col-12.py-5 img:first-of-type{display: none;}
+  #products .container .row .col-12.py-5 img:last-of-type{display: block;}
   header #top .contact-links a{font-size: 0px;}
   #mainBanner .carousel-caption h4{font-size: 23px;line-height: 35px;}
   #mainBanner .carousel-caption strong{font-size: 25px;line-height: 40px;}
