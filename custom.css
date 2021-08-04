@@ -113,7 +113,7 @@ body{overflow-x: hidden;}
 #resources{margin-top:40px;margin-bottom: 40px;}
 #resources h1{font-size: 42px;line-height: 50px;color:#000;text-transform: uppercase;font-weight: bold;}
 #resources strong{font-size: 22px;line-height: 32px;color:#ED1E23;text-transform: uppercase;margin-bottom: 15px;font-weight: bold;display: block;}
-#resources .partners * img{height: 250px;width: 250px;object-fit: contain;margin: 0 auto;display: block;}
+#resources .partners * img{height: 150px;width: 150px;object-fit:scale-down;margin: 0 auto;display: block;}
 
 #distribution{padding: 80px 0 100px;background: url("./dis.svg")no-repeat;background-size:contain;background-attachment: fixed;background-position:center left;margin-bottom:0px;}
 #distribution h3{font-size: 22px;color:#ED1E23;font-weight: bold;line-height: 32px;text-transform: uppercase;}
