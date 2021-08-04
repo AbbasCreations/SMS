@@ -831,7 +831,7 @@ width:100%;
 .choice a:hover{color:#ED1E23;border-color:#ED1E23;background:0 0}
 .choiceimg img{border-radius: 25px;}
 
-#team{padding-top: 156px;background: url("./red.svg")no-repeat;background-size: cover;background-attachment: fixed;}
+#team{padding-top: 156px;background: url("./bg.jpg")no-repeat;background-size: cover;background-attachment: fixed;}
 #products{padding-top: 156px;background: url("./bg.jpg")no-repeat;background-size: cover;background-attachment: fixed;}
 #products .container .row .col-12.py-5 img:last-of-type{display: none;}
  #careers{padding-top: 156px;}
